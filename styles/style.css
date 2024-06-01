@@ -11,6 +11,9 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 a {
     text-decoration: none;
@@ -28,21 +31,27 @@ ul li {
 
 
 /* first page  */
-
 /* header */
+
+.first-page {
+    padding-bottom: 24px;
+    border: 2px solid red;
+}
+
 .header-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding: 24px 24px;
     margin-bottom: 70px;
+    padding: 0px 25px;
 }
 
 .left-logo {
     display: flex;
     align-items: center;
     gap: 6px;
+    cursor: pointer;
 }
 
 .left-logo h6 {
@@ -61,8 +70,15 @@ ul li {
 
 .navbar-flex {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 24px;
+    margin-right: 0px;
+}
+
+.navbar-flex li,
+.navbar-flex li button {
+    cursor: pointer;
 }
 
 .theme-btn {
@@ -124,6 +140,7 @@ ul li {
 .blue-indonesia {
     color: var(--blue-one);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .flex-buttons {
@@ -132,6 +149,10 @@ ul li {
     gap: 29px;
     padding-top: 32px;
     padding-bottom: 24px;
+}
+
+.flex-buttons button {
+    cursor: pointer;
 }
 
 .blue-btn {
@@ -159,23 +180,110 @@ ul li {
 
 .social-img {
     width: 213px;
+    cursor: pointer;
 }
 
 
 /* second page  */
+.section-page {
+    display: flex;
+    flex-direction: column-reverse;
+    border: 2px solid blue;
+    position: relative;
+    padding: 0px 0px;
+
+}
+
+.left-article {
+    padding: 50px 24px 126px 24px;
+}
+
+.first-gray-btn {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--gray-one);
+    width: 138px;
+    padding: 8px 10px 8px 12px;
+    border-radius: 32px;
+    font-size: 14px;
+}
+
+.first-gray-btn img {
+    width: 20px;
+}
+
+.second-title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 13px;
+    padding-bottom: 31px;
+}
+
+.second-title img {
+    width: 68px;
+}
+
+.title-img2 img {
+    width: 35px;
+}
 
 
 
+.title-description {
+    width: 327px;
+    font-size: 14px;
+}
 
+.tools-img {
+    text-align: center;
+}
 
+.tools-img {
+    padding: 40px 0px;
+}
+
+.button-blue {
+    text-align: center;
+}
+
+/* right side  */
+.article-right-img img {
+    width: 100%;
+    height: 300px;
+}
+
+/* third page  */
+
+.shadow-image {
+    padding: 7px 9px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50%;
+}
+
+.tools-second-img img {
+    width: 145px;
+}
 
 /* media queries  */
 
 @media (min-width:480px) {
+    .first-page {
+        padding-bottom: 158px;
+    }
 
     /* header  */
     .header-flex {
-        padding: 24px 146px;
+        padding: 24px 62px;
+
     }
 
     .left-logo h6 {
@@ -195,7 +303,9 @@ ul li {
     }
 
     .navbar-flex {
+        margin-right: -55px;
         gap: 56px;
+        border: 1px solid red;
     }
 
     /* profile section  */
@@ -237,6 +347,63 @@ ul li {
     .download-btn {
         gap: 2.5px;
     }
+
+
+    /* second page  */
+    .section-page {
+        padding: 81px 62px;
+        display: flex;
+        flex-direction: row;
+        gap: 72px;
+
+    }
+
+    .second-title img {
+        width: 48px;
+    }
+
+    .title-img2 img {
+        width: 25px;
+    }
+
+    .article-right-img img {
+        width: 550px;
+        object-fit: fill;
+        border: 1px solid red;
+        height: 738px;
+    }
+
+    .left-article {
+        padding: 185px 0px 148px 80px;
+    }
+
+    .button-blue {
+        text-align: start;
+    }
+
+    .first-gray-btn {
+        position: absolute;
+        top: 220px;
+        left: 140px;
+
+    }
+
+    .tools-img {
+        text-align: start;
+    }
+
+    .title-description {
+        font-size: 18px;
+        width: 446px;
+
+    }
+
+    /* third page  */
+    .shadow-image {
+        padding: 3px 11px;
+    }
+
+
 
 
 
