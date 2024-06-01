@@ -1,0 +1,243 @@
+:root {
+    --blue-one: #3040E5;
+    --gray-one: #F2F2F7;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+
+/* first page  */
+
+/* header */
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px 24px;
+    margin-bottom: 70px;
+}
+
+.left-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.left-logo h6 {
+    font-size: 22px;
+    font-weight: 500;
+    display: none;
+}
+
+.moon-img {
+    width: 24px;
+}
+
+.logo-biscuit {
+    width: 37px;
+}
+
+.navbar-flex {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.theme-btn {
+    background: white;
+    border: none;
+}
+
+.menu {
+    display: block;
+    background: var(--gray-one);
+    border: none;
+    padding: 3px 16px;
+    font-size: 14px;
+    border-radius: 29px;
+}
+
+.hide-nav {
+    display: none;
+}
+
+/* profile section  */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0px 100px;
+}
+
+.pp-image {
+    width: 82px;
+}
+
+.profile-section h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 146%;
+    text-align: center;
+
+}
+
+.profile-section h1 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 142%;
+    font-weight: 700;
+    width: 326px;
+}
+
+.profile-para {
+    text-align: center;
+    width: 327px;
+    line-height: 192%;
+    font-size: 14px;
+    padding: 0px;
+}
+
+.blue-indonesia {
+    color: var(--blue-one);
+    text-decoration: underline;
+}
+
+.flex-buttons {
+    display: grid;
+    align-items: center;
+    gap: 29px;
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.blue-btn {
+    background: var(--blue-one);
+    color: white;
+    /* width: 167px; */
+    padding: 10px 40px;
+    border-radius: 43px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-weight: 400;
+}
+
+.download-img {
+    width: 24px;
+}
+
+.social-img {
+    width: 213px;
+}
+
+
+/* second page  */
+
+
+
+
+
+
+/* media queries  */
+
+@media (min-width:480px) {
+
+    /* header  */
+    .header-flex {
+        padding: 24px 146px;
+    }
+
+    .left-logo h6 {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hide-nav {
+        display: block;
+    }
+
+    .moon-img {
+        width: 37px;
+    }
+
+    .navbar-flex {
+        gap: 56px;
+    }
+
+    /* profile section  */
+
+    .profile-section {
+        padding: 0px 24px;
+    }
+
+    .pp-image {
+        width: 64px;
+    }
+
+    .profile-section h5 {
+        font-size: 24px;
+
+    }
+
+    .profile-section h1 {
+        font-size: 60px;
+        width: 867px;
+    }
+
+    .profile-para {
+        width: 775px;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .flex-buttons {
+        display: flex;
+        align-items: center;
+        gap: 29px;
+    }
+
+    .blue-btn {
+        padding: 10px 40px;
+    }
+
+    .download-btn {
+        gap: 2.5px;
+    }
+
+
+
+}

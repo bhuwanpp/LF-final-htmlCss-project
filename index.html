@@ -6,51 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LF-Html-Final Project</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <main>
         <!-- first Page -->
-
         <!-- header  -->
-        <header>
+        <header class="header-flex">
             <!-- left logo -->
-            <div class="left-logo"></div>
+            <div class="left-logo">
+                <img src="/images/firstPage/biscuit.png" alt="" class="logo-biscuit">
+                <h6>BISCUIT</h6>
+            </div>
 
             <!-- right nav  -->
             <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                <ul class="navbar-flex">
+                    <li class="hide-nav">About</li>
+                    <li class="hide-nav">Work</li>
+                    <li class="hide-nav">Contact</li>
                     <li>
-                        <button><img src="./images/firstPage/moon.png" alt="dark">
+                        <button class="theme-btn"><img src="./images/firstPage/moon.png" alt="dark" class="moon-img">
                         </button>
+                    </li>
+                    <li>
+                        <button class="menu">MENU</button>
                     </li>
                 </ul>
             </nav>
         </header>
         <!-- section  -->
-        <section>
-            <img src="/images/firstPage/PP.png" alt="pp image">
+        <section class="profile-section">
+            <img src="/images/firstPage/PP.png" alt="pp image" class="pp-image">
             <h5>Hi, I &#8217;m Nanang Prasetya</h5>
             <h1>UI/UX Designer and
                 Software Development</h1>
-            <p>I’m from Indonesia and I have been working (Freelance) as a Software Development especially in the UI/UX
+            <p class="profile-para">I’m from Indonesia and I have been working (Freelance) as a Software Development
+                especially in the UI/UX
                 Designer and Development for more than 2 year at
-                <span>Panemu Indonesia</span>company.
+                <span class="blue-indonesia">Panemu Indonesia</span>company.
             </p>
             <div class="flex-buttons">
-                <button>say hello</button>
-                <button>
-                    <img src="/images/firstPage/download.png" alt="download">
+                <button class="blue-btn">say hello</button>
+                <button class="download-btn">
+                    <img src="/images/firstPage/download.png" alt="download" class="download-img">
                     <p>Download CV</p>
                 </button>
             </div>
-            one
 
             <img src="/images/firstPage/socialpics.png" alt="imgs" class="social-img">
-
 
         </section>
 
