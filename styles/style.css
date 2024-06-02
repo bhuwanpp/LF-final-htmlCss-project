@@ -5,6 +5,7 @@
     /* color  */
     --main-black: #282C34;
     --black-one: #050519;
+    --bg-white: #F4F6FB;
 }
 
 
@@ -18,7 +19,7 @@
 
 body {
     overflow-x: hidden;
-    background-color: white;
+    background-color: var(--bg-white);
     color: black;
     transition: all 0.5s linear;
 
@@ -418,9 +419,12 @@ ul li {
 
 /* color theme   */
 
+/* light mode  */
 
-body.dark .header-flex {
-    background: #000;
+.first-page,
+.left-article,
+.fifth-page {
+    background: white;
 }
 
 /* bg black  */
