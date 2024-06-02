@@ -172,7 +172,8 @@ ul li {
     cursor: pointer;
 }
 
-.blue-btn {
+.blue-btn,
+.blue-btn-mobile {
     background: var(--blue-one);
     color: white;
     /* width: 167px; */
@@ -180,6 +181,15 @@ ul li {
     border-radius: 43px;
     font-size: 14px;
     text-transform: uppercase;
+}
+
+/* blue button hide and show  */
+.btn-desktop {
+    display: none;
+}
+
+.blue-btn-mobile {
+    display: inline;
 }
 
 .download-btn {
@@ -380,13 +390,17 @@ ul li {
 }
 
 .button-app-tool {
-    background: var(--gray-one);
+    background: var(--blue-one);
+    color: white;
     text-align: center;
     padding: 10px 0px;
     margin-top: 45px;
     border-radius: 43px;
     font-size: 15px;
+
 }
+
+
 
 /* footer  */
 .footer {
@@ -542,8 +556,17 @@ body.dark .social-img {
         padding-bottom: 40px;
     }
 
-    .blue-btn {
+    .blue-btn,
+    .blue-btn-mobile {
         padding: 10px 40px;
+    }
+
+    .btn-desktop {
+        display: block;
+    }
+
+    .blue-btn-mobile {
+        display: none;
     }
 
     .download-btn {
@@ -628,6 +651,11 @@ body.dark .social-img {
 
     .hr-for-desktop {
         display: block;
+    }
+
+    .button-app-tool {
+        background: var(--gray-one);
+        color: black;
     }
 
 
