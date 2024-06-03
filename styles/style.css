@@ -60,8 +60,8 @@ ul li {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     width: 80%;
     margin: auto;
 }
@@ -153,6 +153,7 @@ ul li {
     align-items: center;
     flex-direction: column;
     gap: 16px;
+    padding-top: 70px;
 }
 
 .pp-image {
@@ -252,6 +253,7 @@ ul li {
     width: 100%;
     margin: auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
 }
 
 .left-article {
@@ -266,16 +268,11 @@ ul li {
 
 }
 
+
 .first-gray-btn {
     position: absolute;
     top: 16px;
     left: 16px;
-    z-index: 20;
-    display: flex;
-}
-
-.first-gray-btn,
-.second-gray-btn {
     display: flex;
     align-items: center;
     gap: 7px;
@@ -284,15 +281,10 @@ ul li {
     padding: 8px 10px 8px 12px;
     border-radius: 32px;
     font-size: 14px;
+
 }
 
-.second-gray-btn {
-    display: none;
-}
-
-
-.first-gray-btn img,
-.second-gray-btn img {
+.first-gray-btn img {
     width: 24px;
 }
 
@@ -386,6 +378,8 @@ ul li {
     display: grid;
     column-gap: 62px;
     row-gap: 26px;
+    align-items: center;
+    justify-content: center;
 }
 
 .title-application {
@@ -457,7 +451,7 @@ ul li {
     margin-top: 45px;
     border-radius: 43px;
     font-size: 15px;
-
+    width: 100%;
 }
 
 
@@ -565,6 +559,11 @@ body.dark .social-img {
     }
 
     /* header  */
+    .header-flex {
+        padding-top: 26px;
+        padding-bottom: 26px;
+
+    }
 
     .left-logo h6 {
         display: block;
@@ -673,12 +672,9 @@ body.dark .social-img {
     }
 
     .first-gray-btn {
-        display: none;
+        position: static;
     }
 
-    .second-gray-btn {
-        display: flex;
-    }
 
 
     .tools-img {
@@ -702,8 +698,12 @@ body.dark .social-img {
 
     /* fifth page  */
     .fifth-page {
-        padding: 49px 146px 45px 151px;
+        width: 100%;
+    }
 
+    .grid-fifth-page {
+        width: 80%;
+        margin: auto;
     }
 
     .gridTools {
