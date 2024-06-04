@@ -207,7 +207,6 @@ ul li {
 .blue-btn-mobile {
     background: var(--blue-one);
     color: white;
-    /* width: 167px; */
     padding: 10px 40px;
     border-radius: 43px;
     font-size: 14px;
@@ -251,9 +250,9 @@ ul li {
     flex-direction: column-reverse;
     position: relative;
     width: 100%;
-    margin: auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: relative;
+    gap: 24px;
 }
 
 .left-article {
@@ -270,9 +269,11 @@ ul li {
 
 
 .first-gray-btn {
+    /* to go up in image  */
     position: absolute;
     top: 16px;
     left: 16px;
+
     display: flex;
     align-items: center;
     gap: 7px;
@@ -307,7 +308,7 @@ ul li {
 
 
 .title-description {
-    width: 327px;
+    /* width: 327px; */
     font-size: 14px;
     line-height: 192%;
 }
@@ -326,12 +327,15 @@ ul li {
 
 .article-right-img {
     width: 100%;
+    flex-basis: 50%;
 }
 
 .article-right-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    max-height: 500px;
+    overflow: hidden;
 
 }
 
@@ -359,7 +363,6 @@ ul li {
 
 /* fourth page  */
 .medica-img img {
-
     width: 41px;
     height: 13px;
     margin-bottom: 5px;
@@ -367,16 +370,19 @@ ul li {
 
 /* fifth page  */
 .fifth-page {
-    padding: 35px 24px 27px 23px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
 
 }
 
 .gridTools {
-    display: grid;
-    column-gap: 62px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10%;
     row-gap: 26px;
     align-items: center;
     justify-content: center;
@@ -458,14 +464,18 @@ ul li {
 
 /* footer  */
 .footer {
-    padding: 24px 25px;
-
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .footer-flex {
     display: grid;
     row-gap: 16px;
     align-items: center;
+    width: 80%;
+    margin: auto;
+
 }
 
 .left-footer h3 {
@@ -483,6 +493,8 @@ ul li {
 
 .social-media-link {
     padding-top: 24px;
+    width: 80%;
+    margin: auto;
 }
 
 /* color theme   */
@@ -645,6 +657,7 @@ body.dark .social-img {
         margin: auto;
         display: flex;
         flex-direction: row;
+        flex: 1;
         gap: 72px;
         margin-top: 81px;
         margin-bottom: 81px;
@@ -663,8 +676,15 @@ body.dark .social-img {
         align-items: start;
         justify-content: center;
         flex-direction: column;
-        padding-left: 80px;
+        padding-left: 40px;
         gap: 20px;
+        flex-basis: 60%;
+        overflow-x: hidden;
+    }
+
+    .article-right-img img {
+        max-height: 738px;
+
     }
 
     .button-blue {
@@ -683,13 +703,10 @@ body.dark .social-img {
 
     .title-description {
         font-size: 18px;
-        width: 446px;
+        /* width: 446px; */
 
     }
 
-    /* right */
-
-    /* fix image  */
 
     /* third page  */
     .shadow-image {
@@ -708,6 +725,7 @@ body.dark .social-img {
 
     .gridTools {
         display: flex;
+        flex-direction: row;
     }
 
     .title-application {
@@ -733,12 +751,6 @@ body.dark .social-img {
     }
 
 
-    /* footer  */
-    .footer {
-        padding: 39px 151px;
-
-    }
-
     .footer-flex {
         display: flex;
         justify-content: space-between;
@@ -755,6 +767,5 @@ body.dark .social-img {
         padding-bottom: 0px;
     }
 
-    /* color theme  */
 
 }
