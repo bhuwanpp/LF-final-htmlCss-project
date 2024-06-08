@@ -55,7 +55,7 @@ ul li {
 
 }
 
-.header-flex {
+.first-page__headerDesign {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,21 +66,21 @@ ul li {
     margin: auto;
 }
 
-.left-logo {
+.header__logo {
     display: flex;
     align-items: center;
     gap: 6px;
     cursor: pointer;
 }
 
-.left-logo h6 {
+.header__logo h6 {
     font-size: 22px;
     font-weight: 500;
     display: none;
 }
 
-.moon-img,
-.sun-img {
+.themebtn--imgMoon,
+.themebtn--imgSun {
     width: 24px;
 }
 
@@ -89,7 +89,7 @@ ul li {
     width: 37px;
 }
 
-.navbar-flex {
+.navbar__design {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -97,8 +97,8 @@ ul li {
     margin-right: 0px;
 }
 
-.navbar-flex li,
-.navbar-flex li button {
+.navbar__design li,
+.navbar__design li button {
     cursor: pointer;
 }
 
@@ -116,11 +116,11 @@ ul li {
     border-radius: 29px;
 }
 
-.hide-nav {
+.navbar--liHide {
     display: none;
 }
 
-.show-responsive {
+.navbar__responsive {
     display: none;
     flex-direction: column;
     gap: 10px;
@@ -135,14 +135,14 @@ ul li {
 }
 
 
-.show-nav {
+.navbar--liShow {
     background: var(--gray-one);
     padding: 8px;
     border-radius: 10%;
     cursor: pointer;
 }
 
-.show-nav:hover {
+.navbar--liShow:hover {
     opacity: 0.8;
 }
 
@@ -156,7 +156,7 @@ ul li {
     padding-top: 70px;
 }
 
-.pp-image {
+.profile--image {
     width: 82px;
 }
 
@@ -176,7 +176,7 @@ ul li {
     width: 326px;
 }
 
-.profile-para {
+.profile--paragraph {
     text-align: center;
     width: 327px;
     line-height: 192%;
@@ -184,14 +184,14 @@ ul li {
     padding: 0px;
 }
 
-.blue-indonesia {
+.profile--spanblue {
     color: var(--blue-one);
     text-decoration: underline;
     cursor: pointer;
     padding-right: 3px;
 }
 
-.flex-buttons {
+.profile__buttons {
     display: grid;
     align-items: center;
     gap: 29px;
@@ -199,12 +199,12 @@ ul li {
     padding-bottom: 120px;
 }
 
-.flex-buttons button {
+.profile__buttons button {
     cursor: pointer;
 }
 
-.blue-btn,
-.blue-btn-mobile {
+.section--blueButton,
+.btn-mobile {
     background: var(--blue-one);
     color: white;
     padding: 10px 40px;
@@ -218,11 +218,11 @@ ul li {
     display: none;
 }
 
-.blue-btn-mobile {
+.btn-mobile {
     display: inline;
 }
 
-.download-btn {
+.blueButton--download {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,7 +255,7 @@ ul li {
     gap: 24px;
 }
 
-.left-article {
+.section__leftSide {
     padding-bottom: 126px;
     padding: 36px 0px;
     display: flex;
@@ -268,7 +268,7 @@ ul li {
 }
 
 
-.first-gray-btn {
+.section--grayButton {
     /* to go up in image  */
     position: absolute;
     top: 16px;
@@ -285,11 +285,11 @@ ul li {
 
 }
 
-.first-gray-btn img {
+.section--grayButton img {
     width: 24px;
 }
 
-.second-title {
+.section__secondTitle {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -297,40 +297,40 @@ ul li {
     font-weight: 700;
 }
 
-.second-title img {
+.section__secondTitle img {
     width: 68px;
 }
 
-.title-img2 img {
+.secondTitle--imgs2 img {
     width: 35px;
 }
 
 
 
-.title-description {
+.section__Description {
     /* width: 327px; */
     font-size: 14px;
     line-height: 192%;
 }
 
-.tools-img {
+.section__toolsImgs {
     text-align: center;
 }
 
 
-.button-blue {
+.section--blueBtn {
     text-align: center;
 }
 
 
 /* right side  */
 
-.article-right-img {
+.section__rightImg {
     width: 100%;
     flex-basis: 50%;
 }
 
-.article-right-img img {
+.section__rightImg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -341,28 +341,28 @@ ul li {
 
 /* third page  */
 
-.shadow-image {
+.section--shadow {
     padding: 5px 7px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 50%;
 }
 
-.shadow-image img {
+.section--shadow img {
 
     margin-top: 10px;
 }
 
 
-.tools-second-img img {
+.section--ToolsSImgs img {
     width: 145px;
 }
 
-.medica-img {
+.section--medicaImgs {
     padding: 5px 7px;
 }
 
 /* fourth page  */
-.medica-img img {
+.section--medicaImgs img {
     width: 41px;
     height: 13px;
     margin-bottom: 5px;
@@ -379,7 +379,7 @@ ul li {
 
 }
 
-.gridTools {
+.fifth__gridTools {
     display: flex;
     flex-direction: column;
     column-gap: 10%;
@@ -388,50 +388,50 @@ ul li {
     justify-content: center;
 }
 
-.title-application {
+.fifthPage--title {
     text-align: center;
     font-size: 24px;
     font-weight: 700;
     padding-bottom: 62px;
 }
 
-.tool1-figma {
+.fifth--toolDesign {
     width: 340px;
     position: relative;
 }
 
-.tool1-figma img {
+.fifth--toolDesign img {
     width: 80px;
     margin-left: -20px;
     padding: 0;
     z-index: 30;
 }
 
-.tool1-figma h5 {
+.fifth--toolDesign h5 {
     font-size: 24px;
     font-weight: 700;
     padding-bottom: 10px;
 }
 
-.tool1-figma p {
+.fifth--toolDesign p {
     font-size: 16px;
     line-height: 190%;
 }
 
-.hr-for-mobile {
+.fifth--hrMbl {
     display: block;
     background: var(--hr-color);
     width: 85%;
 }
 
-.hr-for-grid2 {
+.fifth--hrGrid {
     background: var(--hr-color);
     width: 85%;
     margin-bottom: 26px;
 
 }
 
-.hr-for-desktop {
+.fifth--hrdesktop {
     display: none;
     background: var(--hr-color);
     width: 100%;
@@ -449,7 +449,7 @@ ul li {
     margin-left: 25px;
 }
 
-.button-app-tool {
+.fifth--buttonappTool {
     background: var(--blue-one);
     color: white;
     text-align: center;
@@ -457,7 +457,9 @@ ul li {
     margin-top: 45px;
     border-radius: 43px;
     font-size: 15px;
-    width: 100%;
+    width: 95%;
+    margin-left: 10px;
+
 }
 
 
@@ -469,7 +471,7 @@ ul li {
     padding-bottom: 24px;
 }
 
-.footer-flex {
+.footer__design {
     display: grid;
     row-gap: 16px;
     align-items: center;
@@ -478,13 +480,13 @@ ul li {
 
 }
 
-.left-footer h3 {
+.footer__leftSide h3 {
     font-size: 24px;
     font-weight: 700;
     padding-bottom: 10px;
 }
 
-.left-footer p {
+.footer__leftSide p {
     font-size: 14px;
     padding-bottom: 20px;
     line-height: 190%;
@@ -512,52 +514,52 @@ body.dark .first-page,
 body.dark .section-page,
 body.dark .fifth-page,
 body.dark .theme-btn,
-body.dark .download-btn {
+body.dark .blueButton--download {
     background: var(--black-one);
 }
 
-body.dark .blue-indonesia,
-body.dark .download-btn,
+body.dark .profile--spanblue,
+body.dark .blueButton--download,
 body.dark .menu {
     color: white;
 }
 
 /* bg white  */
-body.dark .shadow-image {
+body.dark .section--shadow {
     background: white;
 }
 
-body.dark .first-gray-btn,
+body.dark .section--grayButton,
 body.dark .second-gray-btn,
 body.dark .menu {
     background: var(--main-black);
 }
 
-body.dark .show-responsive {
+body.dark .navbar__responsive {
     color: black;
 }
 
 
-body.dark .header-width {
+body.dark .first-page__header {
     background: #000;
 }
 
 /* new add dark  */
 
 
-.sun-img,
+.themebtn--imgSun,
 .download-white,
 .social-img-dark {
     display: none;
 }
 
-body.dark .sun-img,
+body.dark .themebtn--imgSun,
 body.dark .download-white,
 body.dark .social-img-dark {
     display: inline;
 }
 
-body.dark .moon-img,
+body.dark .themebtn--imgMoon,
 body.dark .download-img,
 body.dark .social-img {
     display: none;
@@ -571,13 +573,13 @@ body.dark .social-img {
     }
 
     /* header  */
-    .header-flex {
+    .first-page__headerDesign {
         padding-top: 26px;
         padding-bottom: 26px;
 
     }
 
-    .left-logo h6 {
+    .header__logo h6 {
         display: block;
     }
 
@@ -585,16 +587,16 @@ body.dark .social-img {
         display: none;
     }
 
-    .hide-nav {
+    .navbar--liHide {
         display: block;
     }
 
-    .moon-img,
-    .sun-img {
+    .themebtn--imgMoon,
+    .themebtn--imgSun {
         width: 37px;
     }
 
-    .navbar-flex {
+    .navbar__design {
         margin-right: -55px;
         gap: 56px;
     }
@@ -606,7 +608,7 @@ body.dark .social-img {
     /* profile section  */
 
 
-    .pp-image {
+    .profile--image {
         width: 64px;
     }
 
@@ -620,21 +622,21 @@ body.dark .social-img {
         width: 867px;
     }
 
-    .profile-para {
+    .profile--paragraph {
         width: 715px;
         padding: 10px 20px;
         font-size: 18px;
     }
 
-    .flex-buttons {
+    .profile__buttons {
         display: flex;
         align-items: center;
         gap: 29px;
         padding-bottom: 40px;
     }
 
-    .blue-btn,
-    .blue-btn-mobile {
+    .section--blueButton,
+    .btn-mobile {
         padding: 10px 40px;
     }
 
@@ -642,11 +644,11 @@ body.dark .social-img {
         display: block;
     }
 
-    .blue-btn-mobile {
+    .btn-mobile {
         display: none;
     }
 
-    .download-btn {
+    .blueButton--download {
         gap: 4px;
     }
 
@@ -663,15 +665,15 @@ body.dark .social-img {
         margin-bottom: 81px;
     }
 
-    .second-title img {
+    .section__secondTitle img {
         width: 48px;
     }
 
-    .title-img2 img {
+    .secondTitle--imgs2 img {
         width: 25px;
     }
 
-    .left-article {
+    .section__leftSide {
         display: flex;
         align-items: start;
         justify-content: center;
@@ -682,26 +684,26 @@ body.dark .social-img {
         overflow-x: hidden;
     }
 
-    .article-right-img img {
+    .section__rightImg img {
         max-height: 738px;
 
     }
 
-    .button-blue {
+    .section--blueBtn {
         text-align: start;
     }
 
-    .first-gray-btn {
+    .section--grayButton {
         position: static;
     }
 
 
 
-    .tools-img {
+    .section__toolsImgs {
         text-align: start;
     }
 
-    .title-description {
+    .section__Description {
         font-size: 18px;
         /* width: 446px; */
 
@@ -709,7 +711,7 @@ body.dark .social-img {
 
 
     /* third page  */
-    .shadow-image {
+    .section--shadow {
         padding: 3px 11px;
     }
 
@@ -718,51 +720,51 @@ body.dark .social-img {
         width: 100%;
     }
 
-    .grid-fifth-page {
+    .fifth-page__Section {
         width: 80%;
         margin: auto;
     }
 
-    .gridTools {
+    .fifth__gridTools {
         display: flex;
         flex-direction: row;
     }
 
-    .title-application {
+    .fifthPage--title {
         font-size: 36px;
     }
 
-    .hr-for-mobile {
+    .fifth--hrMbl {
         display: none;
     }
 
-    .hr-for-grid2 {
+    .fifth--hrGrid {
         display: none;
 
     }
 
-    .hr-for-desktop {
+    .fifth--hrdesktop {
         display: block;
     }
 
-    .button-app-tool {
+    .fifth--buttonappTool {
         background: var(--gray-one);
         color: black;
     }
 
 
-    .footer-flex {
+    .footer__design {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
 
-    .left-footer h3 {
+    .footer__leftSide h3 {
         font-size: 40px;
     }
 
-    .left-footer p {
+    .footer__leftSide p {
         font-size: 18px;
         padding-bottom: 0px;
     }
